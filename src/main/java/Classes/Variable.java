@@ -4,24 +4,26 @@ import Interfaces.Formula;
 
 public class Variable implements Formula
 {
-    private String _name;
-    private float _value;
+    private String name;
+    private Double value;
 
-    public Variable(String name, float value)
+    public Variable(String name, Double value)
     {
-        _name = name;
-        _value = value;
+        this.name = name;
+        this.value = value;
     }
 
     @Override
     public String asString()
     {
-        return _name;
+        return name;
     }
 
     @Override
-    public float asValue()
+    public Double asValue()
     {
-        return _value;
+        return value;
     }
+
+    public void set(Double value){ this.value = value; }
 }

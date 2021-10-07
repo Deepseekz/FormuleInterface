@@ -2,16 +2,17 @@ import Classes.Product;
 import Classes.Sum;
 import Classes.Variable;
 import Interfaces.Formula;
+import Interfaces.Operator;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class TestFormula
 {
-    Formula var = new Variable("x", 2);
-    Formula var2 = new Variable("y", 4);
-    Formula var3 = new Variable("z", 2.5f);
+    Formula var = new Variable("x", 2d);
+    Formula var2 = new Variable("y", 4d);
+    Formula var3 = new Variable("z", 2.5d);
 
-    Formula sum = new Sum(var2, var3); // 6.5f
+    Formula sum = new Operator(var2, var3); // 6.5f
 
     Formula product = new Product(var, sum); // 13.0f
 
