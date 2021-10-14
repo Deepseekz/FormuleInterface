@@ -1,15 +1,14 @@
 package Classes;
 
 import Interfaces.Formula;
-import Interfaces.Operator;
 
 import java.util.ArrayList;
 
 public abstract class VariadicOperator implements Formula{
-    ArrayList<Formula> formulas;
+    Formula[] formulas;
     Operator operator;
 
-    public VariadicOperator(ArrayList<Formula> formulas, Operator operator) {
+    public VariadicOperator(Formula... formulas) {
         this.formulas = formulas;
         this.operator = operator;
     }
@@ -34,4 +33,6 @@ public abstract class VariadicOperator implements Formula{
         }
         return result;
     }
+
+    public double
 }

@@ -1,10 +1,12 @@
 package Classes;
 
 import Interfaces.Formula;
-import Interfaces.Operator;
 
-public class Product implements Operator
+public class Product extends VariadicOperator
 {
+    public Product(Formula... formulas){
+
+    }
     @Override
     public String symbol() {
         return "*";

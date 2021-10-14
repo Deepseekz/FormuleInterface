@@ -1,11 +1,12 @@
 package Classes;
 
 import Interfaces.Formula;
-import Interfaces.Operator;
 
-public class Sum implements Operator
+public class Sum extends VariadicOperator
 {
+    public Sum(Formula... formulas){
 
+    }
     @Override
     public String symbol() {
         return "+";

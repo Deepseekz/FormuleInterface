@@ -1,8 +1,6 @@
 import Classes.Product;
-import Classes.Sum;
 import Classes.Variable;
 import Interfaces.Formula;
-import Interfaces.Operator;
 import org.junit.Assert;
 import org.junit.Test;
 
